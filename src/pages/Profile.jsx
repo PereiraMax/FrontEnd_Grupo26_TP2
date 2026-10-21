@@ -5,13 +5,30 @@ import MediaSections from '../components/MediaSections'
 import RobotConfigurator from '../components/RobotConfigurator'
 import TerminalMainframe from '../components/TerminalMainframe'
 import NotFound from './NotFound'
+import { useEffect, useState } from 'react'
+import Spinner from '../components/Spinner'
 
 const EXTRAS = { robot: RobotConfigurator, terminal: TerminalMainframe }
 
 export default function Profile() {
-  const { id } = useParams()
+  const { id } = useParams()//lee el id de la URL 
+  /*spinner*/
+  const [cargando, setCargando] = useState(true)//arranca en true porque siempre muestra primero el spinner
+
+  useEffect(() => {
+    //cada vez que se cambia el perfil vuelve a mostrar el spinner
+    setCargando(true)
+    //pasan 460 ms y se oculta el spinner
+    const t = setTimeout(() => setCargando(false), 460)
+    //si el usuario navega de nuevo antes de los 460ms se cancela el timer anterior
+    return () => clearTimeout(t)
+  }, [id])
+
   const m = members.find((x) => x.id === id)
   if (!m) return <NotFound mensaje={`No existe un integrante con el identificador "${id}".`} />
+   //mientras "cargando" sea true, no se muestra el resto del perfil
+  if (cargando) return <Spinner texto={`CARGANDO PERFIL DE ${m.nombre.toUpperCase()}…`} />
+
 
   const Extra = m.extra ? EXTRAS[m.extra] : null
   const otros = members.filter((x) => x.id !== m.id)
