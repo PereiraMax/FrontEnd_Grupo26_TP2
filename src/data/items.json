@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "nombre": "React",
+    "categoria": "Frontend",
+    "descripcion": "Biblioteca para construir interfaces con componentes. Es la base del TP2.",
+    "usadoPor": "Todo el equipo",
+    "url": "https://react.dev"
+  },
+  {
+    "id": 2,
+    "nombre": "React Router",
+    "categoria": "Frontend",
+    "descripcion": "Navegación entre pantallas sin recargar la página (rutas, NavLink, Outlet).",
+    "usadoPor": "Todo el equipo",
+    "url": "https://reactrouter.com"
+  },
+  {
+    "id": 3,
+    "nombre": "HTML5",
+    "categoria": "Frontend",
+    "descripcion": "Estructura semántica de las páginas del TP1 y del JSX del TP2.",
+    "usadoPor": "Todo el equipo"
+  },
+  {
+    "id": 4,
+    "nombre": "CSS3",
+    "categoria": "Frontend",
+    "descripcion": "Variables, Grid, Flexbox y animaciones: el sistema de diseño Nightscan.",
+    "usadoPor": "Todo el equipo"
+  },
+  {
+    "id": 5,
+    "nombre": "JavaScript",
+    "categoria": "Frontend",
+    "descripcion": "Lenguaje de las interacciones de los perfiles, en TP1 y TP2.",
+    "usadoPor": "Todo el equipo"
+  },
+  {
+    "id": 6,
+    "nombre": "Vite",
+    "categoria": "Herramientas",
+    "descripcion": "Servidor de desarrollo y bundler del proyecto React.",
+    "usadoPor": "Todo el equipo",
+    "url": "https://vite.dev"
+  },
+  {
+    "id": 7,
+    "nombre": "Git",
+    "categoria": "Herramientas",
+    "descripcion": "Control de versiones: una rama por integrante.",
+    "usadoPor": "Todo el equipo",
+    "url": "https://git-scm.com"
+  },
+  {
+    "id": 8,
+    "nombre": "GitHub",
+    "categoria": "Herramientas",
+    "descripcion": "Repositorio público, ramas y pull requests del equipo.",
+    "usadoPor": "Todo el equipo",
+    "url": "https://github.com"
+  },
+  {
+    "id": 9,
+    "nombre": "Vercel",
+    "categoria": "Herramientas",
+    "descripcion": "Publicación del sitio con deploy automático desde el repositorio.",
+    "usadoPor": "Todo el equipo",
+    "url": "https://vercel.com"
+  },
+  {
+    "id": 10,
+    "nombre": "Visual Studio Code",
+    "categoria": "Herramientas",
+    "descripcion": "Editor de código de uso habitual en el equipo.",
+    "usadoPor": "Todo el equipo",
+    "url": "https://code.visualstudio.com"
+  },
+  {
+    "id": 11,
+    "nombre": "Java",
+    "categoria": "Backend",
+    "descripcion": "Lenguaje de backend para aplicaciones empresariales.",
+    "usadoPor": "Matias, Julian"
+  },
+  {
+    "id": 12,
+    "nombre": "Spring",
+    "categoria": "Backend",
+    "descripcion": "Framework de Java para servicios y APIs.",
+    "usadoPor": "Matias",
+    "url": "https://spring.io"
+  },
+  {
+    "id": 13,
+    "nombre": "C#",
+    "categoria": "Backend",
+    "descripcion": "Lenguaje principal del stack .NET.",
+    "usadoPor": "Emmanuel, Martin, Maximo"
+  },
+  {
+    "id": 14,
+    "nombre": "ASP.NET Core",
+    "categoria": "Backend",
+    "descripcion": "Framework web de .NET para APIs y aplicaciones.",
+    "usadoPor": "Emmanuel, Martin",
+    "url": "https://dotnet.microsoft.com"
+  },
+  {
+    "id": 15,
+    "nombre": "Django",
+    "categoria": "Backend",
+    "descripcion": "Framework web de Python con baterías incluidas.",
+    "usadoPor": "Martin",
+    "url": "https://www.djangoproject.com"
+  },
+  {
+    "id": 16,
+    "nombre": "COBOL",
+    "categoria": "Mainframe",
+    "descripcion": "Lenguaje de los sistemas batch y transaccionales de mainframe.",
+    "usadoPor": "Matias"
+  },
+  {
+    "id": 17,
+    "nombre": "Arduino",
+    "categoria": "Hardware",
+    "descripcion": "Placas Uno, Nano y Mega para prototipos de robots.",
+    "usadoPor": "Maximo",
+    "url": "https://www.arduino.cc"
+  },
+  {
+    "id": 18,
+    "nombre": "PLC y control",
+    "categoria": "Hardware",
+    "descripcion": "Automatización industrial, hidráulica y electroneumática.",
+    "usadoPor": "Maximo"
+  },
+  {
+    "id": 19,
+    "nombre": "Driver L298",
+    "categoria": "Hardware",
+    "descripcion": "Puente H doble para controlar motores de corriente continua.",
+    "usadoPor": "Maximo"
+  },
+  {
+    "id": 20,
+    "nombre": "Claude",
+    "categoria": "IA",
+    "descripcion": "Asistente de IA de Anthropic para programar y revisar código.",
+    "usadoPor": "Matias, Martin, Julian, Maximo",
+    "url": "https://claude.ai"
+  },
+  {
+    "id": 21,
+    "nombre": "opencode",
+    "categoria": "IA",
+    "descripcion": "Agente de IA para programar desde la terminal.",
+    "usadoPor": "Emmanuel",
+    "url": "https://opencode.ai"
+  },
+  {
+    "id": 22,
+    "nombre": "ChatGPT",
+    "categoria": "IA",
+    "descripcion": "Asistente de IA usado para generar un avatar.",
+    "usadoPor": "Martin",
+    "url": "https://chatgpt.com"
+  },
+  {
+    "id": 23,
+    "nombre": "Nano Banana",
+    "categoria": "IA",
+    "descripcion": "Modelo de generación de imágenes usado para un avatar.",
+    "usadoPor": "Julian"
+  },
+  {
+    "id": 24,
+    "nombre": "Google Fonts",
+    "categoria": "Diseño",
+    "descripcion": "Orbitron, Chakra Petch, Saira Stencil One y Share Tech Mono.",
+    "usadoPor": "Todo el equipo",
+    "url": "https://fonts.google.com"
+  },
+  {
+    "id": 25,
+    "nombre": "Pillow",
+    "categoria": "Diseño",
+    "descripcion": "Librería de Python para recortar y componer imágenes, sin IA.",
+    "usadoPor": "Matias"
+  }
+]

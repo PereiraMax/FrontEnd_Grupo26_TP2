@@ -1,0 +1,27 @@
+/* Configurador de robot (estilos que estaban inline en maximo.html) */
+.rc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin: 1.5rem 0; }
+.rc-group { background: rgba(0,255,242,.04); border: 1px solid rgba(0,255,242,.35); border-radius: 4px; padding: 1rem; }
+.rc-title { font-family: 'Orbitron', sans-serif; font-size: .85rem; letter-spacing: .05em; color: #00fff2; margin: 0 0 .75rem; text-transform: uppercase; }
+.rc-options { display: flex; flex-wrap: wrap; gap: .5rem; }
+.rc-chip { font-family: 'Chakra Petch', sans-serif; font-size: .8rem; color: #c7fdfb; background: transparent; border: 1px solid rgba(0,255,242,.4); border-radius: 3px; padding: .45rem .75rem; cursor: pointer; transition: all .15s ease; }
+.rc-chip:hover { border-color: #00fff2; box-shadow: 0 0 8px rgba(0,255,242,.5); }
+.rc-chip.is-active { background: rgba(0,255,242,.15); border-color: #00fff2; color: #eafffe; box-shadow: 0 0 12px rgba(0,255,242,.65); }
+.rc-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0; }
+.rc-readout { margin-top: 1.5rem; border: 1px solid rgba(255,32,121,.45); background: rgba(255,32,121,.05); border-radius: 4px; padding: 1.25rem 1.5rem; font-family: 'Chakra Petch', sans-serif; }
+.rc-readout h3 { font-family: 'Orbitron', sans-serif; font-size: .95rem; color: #ff2b79; text-transform: uppercase; letter-spacing: .05em; margin: 0 0 .75rem; }
+.rc-build-list, .rc-check-list { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; gap: .4rem; }
+.rc-build-list li { font-size: .85rem; color: #b8c2c9; }
+.rc-build-list li strong { color: #eafffe; }
+.rc-check-list { font-size: .82rem; }
+.rc-check-ok::before { content: "✓ "; }
+.rc-check-warn::before { content: "⚠ "; }
+.rc-check-error::before { content: "✗ "; }
+.rc-check-info::before { content: "ℹ "; }
+.rc-check-ok { color: #5dffb0; }
+.rc-check-warn { color: #ffd166; }
+.rc-check-error { color: #ff5d6c; }
+.rc-check-info { color: #7fd8ff; }
+.rc-verdict { display: inline-block; padding: .4rem .9rem; border-radius: 3px; font-family: 'Orbitron', sans-serif; font-size: .8rem; letter-spacing: .05em; text-transform: uppercase; }
+.rc-verdict.ok { background: rgba(93,255,176,.15); color: #5dffb0; border: 1px solid rgba(93,255,176,.5); }
+.rc-verdict.warn { background: rgba(255,209,102,.15); color: #ffd166; border: 1px solid rgba(255,209,102,.5); }
+.rc-verdict.error { background: rgba(255,93,108,.15); color: #ff5d6c; border: 1px solid rgba(255,93,108,.5); }

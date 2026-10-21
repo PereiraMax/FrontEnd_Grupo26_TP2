@@ -1,0 +1,112 @@
+[
+  {
+    "id": "maximo", "nombre": "Maximo", "tag": "PLAYER 01 // READY", "ciudad": "CABA", "edad": 44,
+    "githubUser": "PereiraMax",
+    "avatar": "/img/maximo/maximo_ciber.png", "avatarAlt": "Avatar de Maximo en versión cyberpunk",
+    "rol": "Automatización y robótica", "media": "default", "extra": "robot",
+    "skills": [
+      { "nombre": "Robótica-PLC-Control", "valor": 70 },
+      { "nombre": "Microprocesadores CISC-RISC", "valor": 80 },
+      { "nombre": "Pascal QBasic C C++ C# SQL VBscript Java JavaScript", "valor": 70 },
+      { "nombre": "Hidráulica Electroneumática Electrónica", "valor": 80 }
+    ],
+    "peliculas": [
+      { "titulo": "Harry Potter y la piedra filosofal", "detalle": "2001 · Fantasía", "img": "/img/maximo/harrypoter.jpg", "alt": "Póster de Harry Potter y la piedra filosofal" },
+      { "titulo": "A.I. Inteligencia Artificial", "detalle": "2001 · Ciencia ficción", "img": "/img/maximo/inteligencia.jpg", "alt": "Póster de A.I. Inteligencia Artificial" },
+      { "titulo": "Terminator 2: el juicio final", "detalle": "1991 · Ciencia ficción", "img": "/img/maximo/terminator.jpg", "alt": "Póster de Terminator 2" }
+    ],
+    "discos": [
+      { "titulo": "La mosca y la sopa", "detalle": "Patricio Rey y sus Redonditos de Ricota · 1991", "img": "/img/maximo/lamoscaenlasopa.jpg", "alt": "Portada de La mosca y la sopa" },
+      { "titulo": "Cuarteto característico cordobés", "detalle": "Rodrigo Bueno · 2000", "img": "/img/maximo/rodrigo.jpg", "alt": "Portada del disco de Rodrigo Bueno" },
+      { "titulo": "Onda sabanera", "detalle": "Claudio Benítez · 1998", "img": "/img/maximo/ondasabanera.jpg", "alt": "Portada de Onda Sabanera" }
+    ]
+  },
+  {
+    "id": "julian", "nombre": "Julian", "tag": "PLAYER 02 // READY", "ciudad": "Buenos Aires", "edad": 28,
+    "githubUser": "juliganSW",
+    "avatar": "/img/julian/avatar_julian.png", "avatarAlt": "Avatar de Julian",
+    "rol": "Desarrollo web", "media": "filtro", "extra": null,
+    "skills": [
+      { "nombre": "HTML / CSS", "valor": 50 },
+      { "nombre": "JavaScript", "valor": 45 },
+      { "nombre": "Java", "valor": 55 },
+      { "nombre": "Git / GitHub", "valor": 60 }
+    ],
+    "peliculas": [
+      { "titulo": "El imperio contraataca", "detalle": "1980 · Aventura / Fantasía", "img": "/img/julian/starWars_poster.jpg", "alt": "Póster de El imperio contraataca" },
+      { "titulo": "Volver al futuro", "detalle": "1985 · Ciencia ficción / Aventura", "img": "/img/julian/BTF_poster.jpg", "alt": "Póster de Volver al futuro" },
+      { "titulo": "Bastardos sin gloria", "detalle": "2009 · Drama / Bélico", "img": "/img/julian/inglourious_basterds_poster.webp", "alt": "Póster de Bastardos sin gloria" }
+    ],
+    "discos": [
+      { "titulo": "Master of Puppets", "detalle": "Metallica · 1986", "img": "/img/julian/metallica_album.jpg", "alt": "Portada de Master of Puppets" },
+      { "titulo": "Countdown to Extinction", "detalle": "Megadeth · 1992", "img": "/img/julian/megadeth_album.jpg", "alt": "Portada de Countdown to Extinction" },
+      { "titulo": "Nevermind", "detalle": "Nirvana · 1991", "img": "/img/julian/nirvana_album.jpg", "alt": "Portada de Nevermind" }
+    ]
+  },
+  {
+    "id": "martin", "nombre": "Martin", "tag": "PLAYER 03 // READY", "ciudad": "Rosario", "edad": 28,
+    "githubUser": "martin-2t",
+    "avatar": "/img/martin/avatar_martin.png", "avatarAlt": "Avatar de Martin",
+    "rol": "Backend y control de versiones", "media": "eleccion", "extra": null,
+    "skills": [
+      { "nombre": "Django", "valor": 90 },
+      { "nombre": "ASP.NET Core", "valor": 70 },
+      { "nombre": "HTML / CSS / JavaScript", "valor": 65 },
+      { "nombre": "Git / GitHub", "valor": 90 }
+    ],
+    "peliculas": [
+      { "titulo": "Mad Max: Fury Road", "detalle": "2015 · Acción", "img": "/img/martin/mad_max.jpg", "alt": "Póster de Mad Max: Fury Road" },
+      { "titulo": "Shutter Island", "detalle": "2010 · Thriller", "img": "/img/martin/Shutter_Island.jpg", "alt": "Póster de Shutter Island" },
+      { "titulo": "Blade Runner 2049", "detalle": "2017 · Ciencia ficción", "img": "/img/martin/Blade_Runner_2049.jpg", "alt": "Póster de Blade Runner 2049" }
+    ],
+    "discos": [
+      { "titulo": "Hybrid Theory", "detalle": "Linkin Park · 2000", "img": "/img/martin/Linkin_Park_Hybrid_Theory.jpg", "alt": "Portada de Hybrid Theory" },
+      { "titulo": "Meteora", "detalle": "Linkin Park · 2003", "img": "/img/martin/Meteora.jpg", "alt": "Portada de Meteora" },
+      { "titulo": "Nevermind", "detalle": "Nirvana · 1991", "img": "/img/martin/Nirvana_album.jpg", "alt": "Portada de Nevermind" }
+    ]
+  },
+  {
+    "id": "emmanuel", "nombre": "Emmanuel", "tag": "PLAYER 04 // READY", "ciudad": "Mendoza", "edad": 35,
+    "githubUser": "Emmanuel-Valdez",
+    "avatar": "/img/emmanuel/emma.jpg", "avatarAlt": "Foto de Emmanuel, desarrollador backend .NET",
+    "rol": "Backend .NET", "media": "lightbox", "extra": null,
+    "skills": [
+      { "nombre": "C#", "valor": 90 },
+      { "nombre": "ASP.NET Core", "valor": 85 },
+      { "nombre": "HTML / CSS / JavaScript", "valor": 70 },
+      { "nombre": "Git / GitHub", "valor": 80 }
+    ],
+    "peliculas": [
+      { "titulo": "Bastardos sin gloria", "detalle": "2009 · Bélico / Drama", "img": "/img/emmanuel/bastardos_sin_gloria.png", "alt": "Póster de Bastardos sin gloria" },
+      { "titulo": "El Señor de los Anillos: El retorno del Rey", "detalle": "2003 · Fantasía épica", "img": "/img/emmanuel/el_retorno_del_rey.png", "alt": "Póster de El retorno del Rey" },
+      { "titulo": "El caballero de la noche", "detalle": "2008 · Acción / Crimen", "img": "/img/emmanuel/el_caballero_de_la_noche.png", "alt": "Póster de El caballero de la noche" }
+    ],
+    "discos": [
+      { "titulo": "Metallica (Black Album)", "detalle": "Metallica · 1991", "img": "/img/emmanuel/metallica_black_album.png", "alt": "Portada del Black Album" },
+      { "titulo": "Appetite for Destruction", "detalle": "Guns N' Roses · 1987", "img": "/img/emmanuel/appetite_for_destruction.png", "alt": "Portada de Appetite for Destruction" },
+      { "titulo": "Sehnsucht", "detalle": "Rammstein · 1997", "img": "/img/emmanuel/sehnsucht.png", "alt": "Portada de Sehnsucht" }
+    ]
+  },
+  {
+    "id": "matias", "nombre": "Matias", "tag": "PLAYER 05 // READY", "ciudad": "Tablada, Buenos Aires", "edad": 36,
+    "githubUser": "mdev-repos",
+    "avatar": "/img/matias/avatar_matias.png", "avatarAlt": "Avatar cyberpunk de Matias, generado con IA",
+    "rol": "Backend y mainframe", "media": "default", "extra": "terminal",
+    "skills": [
+      { "nombre": "Java / Spring", "valor": 87 },
+      { "nombre": "Mainframe (COBOL)", "valor": 85 },
+      { "nombre": "Backend", "valor": 90 },
+      { "nombre": "Ingeniería de Software", "valor": 83 }
+    ],
+    "peliculas": [
+      { "titulo": "Matrix", "detalle": "1999 · Ciencia ficción", "img": "/img/matias/matrix.jpeg", "alt": "Póster de Matrix" },
+      { "titulo": "Terminator 2: Judgment Day", "detalle": "1991 · Acción / Ciencia ficción", "img": "/img/matias/terminator2.jpeg", "alt": "Póster de Terminator 2" },
+      { "titulo": "Forrest Gump", "detalle": "1994 · Drama", "img": "/img/matias/forestgump.jpeg", "alt": "Póster de Forrest Gump" }
+    ],
+    "discos": [
+      { "titulo": "Rust in Peace", "detalle": "Megadeth · 1990", "img": "/img/matias/m_rip.jpg", "alt": "Portada de Rust in Peace" },
+      { "titulo": "Dirt", "detalle": "Alice in Chains · 1992", "img": "/img/matias/aic_dirt.jpg", "alt": "Portada de Dirt" },
+      { "titulo": "Nostalgia in Times Square", "detalle": "Mingus Big Band · 1993", "img": "/img/matias/jazz.jpeg", "alt": "Portada de Nostalgia in Times Square" }
+    ]
+  }
+]
