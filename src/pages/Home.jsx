@@ -59,7 +59,7 @@ export default function Home() {
         </div>
         <div className="team-grid">
           {members.map((m) => (
-            <MemberCard key={m.id} member={m} selected={picked === m.id} />
+            <MemberCard key={m.id} member={m} selected={picked === m.id} onSelect={setPicked} />
           ))}
         </div>
       </section>
