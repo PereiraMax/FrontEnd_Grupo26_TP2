@@ -63,7 +63,7 @@ Se mantiene la estética del TP1: fondos negro azulado con neones amarillo, cian
 
 | Integrante | Aplicación | Modelo | Qué se hizo |
 |---|---|---|---|
-| Maximo | Claude (claude.ai, chat web) | Claude Sonnet 5.5 | Estructura React del TP2 (Layout, Sidebar, rutas, páginas de datos, API, árbol y bitácora), portado del configurador de robot y ayuda con errores de Vite/Windows. Avatar cyberpunk generado con una IA de imágenes (TP1). |
+| Maximo | Claude (claude.ai, chat web) | Claude Sonnet 5.5 | Estructura React del TP2 (andamiaje comunicacional de intervencion y participacion sobre la producción), portado del configurador de robot y ayuda con errores de Vite/Windows. Avatar cyberpunk generado con una IA de imágenes (TP1). |
 | Julian | Claude (Anthropic) | *(completar modelo)* | TP1: filtro de contenido. Avatar con Nano Banana 2 Lite. *(Completar uso en TP2.)* |
 | Martin | Claude (claude.ai, chat web) y ChatGPT | Claude Sonnet 5 / *(completar modelo de ChatGPT)* | TP1: base del sitio, función de elección al azar y avatar. *(Completar uso en TP2.)* |
 | Emmanuel | opencode | Muse Spark 1.3 | TP1: verificación de datos, lightbox y porcentajes de skills. *(Completar uso en TP2.)* |
