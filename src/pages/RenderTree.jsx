@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 // Árbol de componentes de ESTA aplicación (corresponde al código en src/).
 const TREE = {
   name: 'StrictMode', file: 'main.jsx', nota: 'Punto de entrada: monta la app en #root.',
@@ -27,6 +29,7 @@ const TREE = {
                 {
                   name: 'Profile', file: 'pages/Profile.jsx', nota: 'Perfil de un integrante (ruta /perfil/:id), con datos de members.json.',
                   children: [
+                    { name: 'Spinner', file: 'components/Spinner.jsx', nota: 'Animación de carga que se muestra unos instantes al entrar a cada perfil.' },
                     {
                       name: 'SkillScanner', file: 'components/SkillScanner.jsx', nota: 'Botón de escaneo y lista de habilidades.',
                       children: [{ name: 'SkillBar ×4', file: 'components/SkillBar.jsx', nota: 'Barra de progreso animada de cada habilidad.' }],
@@ -44,16 +47,19 @@ const TREE = {
                 },
                 {
                   name: 'Data', file: 'pages/Data.jsx', nota: 'Listado del JSON con búsqueda y filtro (ruta /datos).',
-                  children: [{ name: 'ItemCard ×25', file: 'components/ItemCard.jsx', nota: 'Tarjeta de cada registro de items.json (según los filtros activos).' }],
+                  children: [{ name: 'ItemCard ×25', file: 'components/ItemCard.jsx', nota: 'Tarjeta de cada registro de items.json (según los filtros activos). Se despliega para ver el detalle.' }],
                 },
                 {
                   name: 'Api', file: 'pages/Api.jsx', nota: 'Consulta la API de GitHub con estados de carga y error (ruta /api).',
                   children: [{ name: 'GithubCard ×5', file: 'components/GithubCard.jsx', nota: 'Datos de GitHub de cada integrante.' }],
                 },
-                { name: 'RenderTree', file: 'pages/RenderTree.jsx', nota: 'Esta página (ruta /arbol).' },
                 {
-                  name: 'Logbook', file: 'pages/Logbook.jsx', nota: 'Registros del proceso (ruta /bitacora).',
-                  children: [{ name: 'LogEntry ×11', file: 'components/LogEntry.jsx', nota: 'Una entrada de bitácora de bitacora.json.' }],
+                  name: 'RenderTree', file: 'pages/RenderTree.jsx', nota: 'Esta página (ruta /arbol). Botones para expandir o contraer todo.',
+                  children: [{ name: 'TreeNode (recursivo)', file: 'pages/RenderTree.jsx', nota: 'Cada nodo de este árbol. Se dibuja a sí mismo para cada hijo y guarda si está abierto o cerrado.' }],
+                },
+                {
+                  name: 'Logbook', file: 'pages/Logbook.jsx', nota: 'Registros del proceso (ruta /bitacora), con filtros por etapa, tipo y autor.',
+                  children: [{ name: 'LogEntry ×N', file: 'components/LogEntry.jsx', nota: 'Una entrada de bitacora.json, según los filtros activos.' }],
                 },
                 { name: 'NotFound', file: 'pages/NotFound.jsx', nota: 'Pantalla 404 para rutas inexistentes o integrantes que no existen.' },
               ],
@@ -65,17 +71,39 @@ const TREE = {
   }],
 }
 
-function Nodo({ n }) {
+const PROFUNDIDAD_INICIAL = 6
+
+function TreeNode({ nodo, nivel, abrirHasta }) {
+  const tieneHijos = Boolean(nodo.children?.length)
+  const [abierto, setAbierto] = useState(nivel < abrirHasta)
+
   return (
     <li>
       <div className="tree-node">
-        <code>{`<${n.name} />`}</code>
-        <span className="tree-file">{n.file}</span>
-        <p>{n.nota}</p>
+        {tieneHijos ? (
+          <button
+            className="tree-toggle"
+            aria-expanded={abierto}
+            aria-label={`${abierto ? 'Contraer' : 'Expandir'} ${nodo.name}`}
+            onClick={() => setAbierto((a) => !a)}
+          >
+            {abierto ? '▾' : '▸'}
+          </button>
+        ) : (
+          <span className="tree-leaf" aria-hidden="true">•</span>
+        )}
+        <code>{`<${nodo.name} />`}</code>
+        <span className="tree-file">{nodo.file}</span>
+        {tieneHijos && !abierto && (
+          <span className="tree-count">+{nodo.children.length}</span>
+        )}
+        <p>{nodo.nota}</p>
       </div>
-      {n.children && (
+      {tieneHijos && abierto && (
         <ul>
-          {n.children.map((c, i) => <Nodo key={`${c.name}-${i}`} n={c} />)}
+          {nodo.children.map((hijo, i) => (
+            <TreeNode key={`${hijo.name}-${i}`} nodo={hijo} nivel={nivel + 1} abrirHasta={abrirHasta} />
+          ))}
         </ul>
       )}
     </li>
@@ -83,6 +111,10 @@ function Nodo({ n }) {
 }
 
 export default function RenderTree() {
+  const [vista, setVista] = useState({ abrirHasta: PROFUNDIDAD_INICIAL, version: 0 })
+
+  const mostrar = (abrirHasta) => setVista((v) => ({ abrirHasta, version: v.version + 1 }))
+
   return (
     <>
       <header className="page-head">
@@ -91,11 +123,17 @@ export default function RenderTree() {
         <p className="page-intro">
           Así se anidan los componentes de esta aplicación, desde la entrada hasta las tarjetas.
           Layout y Sidebar se mantienen mientras <code>Outlet</code> cambia de página. El «×N» indica
-          cuántas veces se repite el componente.
+          cuántas veces se repite el componente. Tocá ▸ / ▾ para expandir o contraer cada rama.
         </p>
       </header>
+
+      <div className="tree-actions">
+        <button className="btn btn-alt" onClick={() => mostrar(Infinity)}>[ EXPANDIR TODO ]</button>
+        <button className="btn btn-ghost" onClick={() => mostrar(1)}>[ CONTRAER TODO ]</button>
+      </div>
+
       <ul className="tree">
-        <Nodo n={TREE} />
+        <TreeNode key={vista.version} nodo={TREE} nivel={0} abrirHasta={vista.abrirHasta} />
       </ul>
     </>
   )
