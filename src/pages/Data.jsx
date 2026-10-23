@@ -4,15 +4,19 @@ import ItemCard from '../components/ItemCard'
 
 const CATEGORIAS = ['Todas', ...new Set(items.map((i) => i.categoria))]
 
+// Pasa a minúsculas y le saca las tildes: "Automatización" -> "automatizacion"
+const normalizar = (s) =>
+  s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+
 export default function Data() {
   const [texto, setTexto] = useState('')
   const [categoria, setCategoria] = useState('Todas')
 
   const resultados = useMemo(() => {
-    const t = texto.trim().toLowerCase()
+    const t = normalizar(texto.trim())
     return items.filter((i) => {
       const okCategoria = categoria === 'Todas' || i.categoria === categoria
-      const okTexto = !t || `${i.nombre} ${i.descripcion} ${i.usadoPor}`.toLowerCase().includes(t)
+      const okTexto = !t || normalizar(`${i.nombre} ${i.descripcion} ${i.usadoPor}`).includes(t)
       return okCategoria && okTexto
     })
   }, [texto, categoria])
@@ -55,7 +59,7 @@ export default function Data() {
         </div>
       ) : (
         <div className="item-grid">
-          {resultados.map((i) => <ItemCard key={i.id} item={i} onVerCategoria={setCategoria} />)}
+          {resultados.map((i) => <ItemCard key={i.id} item={i} />)}
         </div>
       )}
     </>
