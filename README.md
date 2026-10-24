@@ -28,7 +28,7 @@ Una sola aplicación navegable que contiene:
 
 ## Deploy
 
-> **https://REEMPLAZAR-POR-LA-URL-DE-VERCEL.vercel.app** <!-- COMPLETAR antes de entregar -->
+> https://front-end-grupo26-tp-2.vercel.app/
 
 ## Integrantes
 
