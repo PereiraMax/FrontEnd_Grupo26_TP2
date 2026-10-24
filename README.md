@@ -34,11 +34,11 @@ Una sola aplicación navegable que contiene:
 
 | Integrante                      | GitHub                                                |
 | ------------------------------- | ----------------------------------------------------- |
-| Maximo _(completar apellido)_   | [PereiraMax](https://github.com/PereiraMax)           |
-| Julian _(completar apellido)_   | [juliganSW](https://github.com/juliganSW)             |
-| Martin _(completar apellido)_   | [martin-2t](https://github.com/martin-2t)             |
-| Emmanuel _(completar apellido)_ | [Emmanuel-Valdez](https://github.com/Emmanuel-Valdez) |
-| Matias _(completar apellido)_   | [mdev-repos](https://github.com/mdev-repos)           |
+| Maximo Ariel Pereira            | [PereiraMax](https://github.com/PereiraMax)           |
+| Julian Piedrabuena              | [juliganSW](https://github.com/juliganSW)             |
+| Martin Savia                    | [martin-2t](https://github.com/martin-2t)             |
+| Emmanuel Valdez                 | [Emmanuel-Valdez](https://github.com/Emmanuel-Valdez) |
+| Matias Mazzitelli               | [mdev-repos](https://github.com/mdev-repos)           |
 
 ### Responsabilidades del equipo
 
@@ -171,7 +171,7 @@ Se mantiene la estética del TP1: fondos negro azulado con neones amarillo, cian
 | Maximo     | Claude (claude.ai, chat web)           | Claude Sonnet 5.5                                 | Estructura React del TP2 (andamiaje comunicacional de intervencion y participacion sobre la producción), portado del configurador de robot y ayuda con errores de Vite/Windows. Avatar cyberpunk generado con una IA de imágenes (TP1).                                 |
 | Julian     | Claude (Anthropic)                     | _(completar modelo)_                              | TP1: filtro de contenido. Avatar con Nano Banana 2 Lite. _(Completar uso en TP2.)_                                                                                                                                                                                      |
  Martin      | Claude (claude.ai, chat web) y ChatGPT | Claude Sonnet 5 / GPT Image 2 para el desarrollo del avatar | TP1: base del sitio, función de elección al azar y avatar. TP2: con Claude se guio para entender y cumplir las consignas del trabajo y se generó el código de su parte (pasar la función de elección al azar a React dentro de su perfil). |_                                                                                                                                                                                    |
-| Emmanuel   | opencode                               | Muse Spark 1.3                                    | TP1: verificación de datos, lightbox y porcentajes de skills. _(Completar uso en TP2.)_                                                                                                                                                                                 |
+| Emmanuel   | opencode                               | DeepSeek 4.1 + Beam free                          | TP1: verificación de datos, lightbox y porcentajes de skills. TP2: lightbox de su perfil, carga de sus datos y contenidos, revisión de navegación y datos, y asistencia con el código del perfil en React.                                                                                                                         |
 | Matias     | Claude Code                            | Claude Sonnet 5 (TP1) / Claude Opus 5.5 (TP2)     | TP1: terminal mainframe, revisión de ramas y avatar con IA de imágenes. TP2: Árbol de renderizado expandible, bitácora con filtros y detalle desplegable en Datos; selección de tarjetas en la portada; ajustes visuales que yo detecté al revisar (desbordes, scrollbars, alineación, panel mobile); capturas y actualización del README. Revisé y probé cada cambio en el navegador (desktop y mobile). |
 
 La IA se usó como ayuda; cada integrante revisó, adaptó y probó el resultado en su perfil.

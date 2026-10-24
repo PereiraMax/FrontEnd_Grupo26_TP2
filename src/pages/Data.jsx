@@ -59,7 +59,7 @@ export default function Data() {
         </div>
       ) : (
         <div className="item-grid">
-          {resultados.map((i) => <ItemCard key={i.id} item={i} />)}
+          {resultados.map((i) => <ItemCard key={i.id} item={i} onVerCategoria={setCategoria} />)}
         </div>
       )}
     </>
