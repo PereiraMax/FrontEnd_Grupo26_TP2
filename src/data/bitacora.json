@@ -1,4 +1,6 @@
 [
+  { "etapa": "TP2", "fecha": "2026-10-24", "autor": "Julian", "tipo": "Desarrollo",
+    "texto": "Spinner de carga entre perfiles: al navegar a /perfil/:id se muestra un spinner (react-spinners, adaptado a la paleta del sitio) durante ~450ms antes de renderizar el perfil, con useEffect cancelando el temporizador anterior si se navega de nuevo antes de tiempo." },
   { "etapa": "TP2", "fecha": "2026-10-23", "autor": "Matias", "tipo": "Diseño",
     "texto": "Hicimos una revisión visual (UX/UI) de toda la app en desktop y mobile, y redefinimos varios detalles heredados del TP1. 1) Las tarjetas de la portada en mobile quedaban alineadas a la izquierda con un hueco a la derecha: ahora el avatar ocupa todo el ancho de la tarjeta. 2) Las scrollbars eran las grises del navegador: ahora usan la paleta del proyecto (degradado cian, violeta y magenta). 3) La línea cian gruesa con resplandor que separaba la sidebar del contenido era un resto del header del TP1 y competía con el contenido: pasó a una línea fina y tenue, porque el acento neón ahora vive en el scroll. 4) Cada página arrancaba a una altura distinta: unificamos el margen superior para que el contenido empiece a la altura del logo, y compensamos 9 px para centrar ópticamente la etiqueta «// …» con él. 5) El panel mobile de la sidebar era semitransparente y dejaba ver el texto de la página detrás: ahora es opaco." },
   { "etapa": "TP2", "fecha": "2026-10-23", "autor": "Matias", "tipo": "Bug",
@@ -27,4 +29,4 @@
     "texto": "Lightbox propio: al hacer click en una tarjeta se abre en grande y se cierra con Esc, botón o click fuera. También se variaron los porcentajes de las skills." },
   { "etapa": "TP1", "fecha": "2026-09-22", "autor": "Martin", "tipo": "Decisión",
     "texto": "Martin aportó la base que usamos todos: temática Cyberpunk 2077, paleta cian/magenta, tipografías Orbitron y Chakra Petch, portada con efecto typewriter y el perfil de ejemplo con escaneo animado de habilidades." }
-]
+  ]
